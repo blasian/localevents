@@ -10,4 +10,14 @@
 
 @implementation Task
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        static int taskId = 0;
+        self.taskId = taskId++;
+    }
+    return self;
+}
+
 @end

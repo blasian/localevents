@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constant.h"
+#import "Event.h"
+#import "Task.h"
 
 @interface EventManager : NSObject
+
++ (instancetype)sharedInstance;
+- (NSArray*) getEvents;
+- (Event*) getEventWithId:(int)eventId;
+- (NSArray*) getSubscribedEvents;
+- (NSArray*) getInvolvedEvents;
+- (void) addEvent:(Event*)event;
+- (void) removeEvent:(int)eventId;
 
 @end

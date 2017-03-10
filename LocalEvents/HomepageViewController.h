@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventManager.h"
+#import "Event.h"
+#import "Constant.h"
+#import "ViewController.h"
 
-@interface HomepageViewController : UIViewController
+@interface HomepageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

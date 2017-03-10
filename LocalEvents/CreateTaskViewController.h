@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Event.h"
 
-@interface CreateTaskViewController : ViewController
+@interface CreateTaskViewController : ViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+
+@property (weak, nonatomic) Event *event;
 
 @end

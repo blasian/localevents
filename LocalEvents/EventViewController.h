@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Event.h"
 
-@interface EventViewController : ViewController
+@interface EventViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) Event *event;
 
 @end

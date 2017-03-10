@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Task.h"
 
 @interface TaskViewController : ViewController
+
+@property (weak, nonatomic) Task *task;
 
 @end

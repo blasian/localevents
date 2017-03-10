@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self.view action:@selector(endEditing:)];
+    [self.view addGestureRecognizer:tapGR];
 }
 
 - (void)didReceiveMemoryWarning {

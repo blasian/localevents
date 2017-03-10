@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "Event.h"
+#import "EventManager.h"
 
-@interface CreateEventViewController.h : ViewController
+@interface CreateEventViewController : ViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
 @end
